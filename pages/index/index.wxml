@@ -1,0 +1,8 @@
+<view class="tab-view">
+  <tab1 wx:if="{{active === 0}}"></tab1>
+  <tab2 wx:if="{{active === 1}}"></tab2>
+</view>
+<van-tabbar active="{{active}}" bind:change="onChange">
+  <van-tabbar-item icon="wap-home">tab1</van-tabbar-item>
+  <van-tabbar-item icon="manager">tab2</van-tabbar-item>
+</van-tabbar>
